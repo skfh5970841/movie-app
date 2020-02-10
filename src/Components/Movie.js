@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Style/Movie.css";
+import "../Style/Movie.css";
 
 
 Movie.propTypes = {

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import axios from "axios";
-import Movie from "./Movie";
+import Movie from "./Components/Movie";
 import "./Style/App.css";
 
 class App extends React.Component{
