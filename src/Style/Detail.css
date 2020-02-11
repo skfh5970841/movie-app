@@ -1,5 +1,12 @@
+.center{
+    padding: 150px 0px;
+}
+
 .detail_box{
-    margin: 30px;
+    position: relative;
+    height: auto;
+    width: 50%;
+    margin: 0 auto;
     border: 5px solid #dddddd;
-    padding: 30px;
+    padding: 10px;
 }

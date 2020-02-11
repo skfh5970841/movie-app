@@ -21,6 +21,7 @@ class Detail extends React.Component{
         const {location} = this.props;
         if(location.states){
             return (
+                <div className="center">
                     <section className="detail_box">
                         <img src={location.states.poster} alt={location.states.title} title={location.states.title}></img> <br/>
                         <span><h3>{location.states.title}</h3></span>
@@ -28,6 +29,7 @@ class Detail extends React.Component{
                         <span><h5>{location.states.genres}</h5></span>    
                         <span><h5>{location.states.summary}</h5></span>    
                     </section>
+                </div>
                 );
         } else{
             return null;
