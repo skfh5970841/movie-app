@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Style/Detail.css';
 
 /*
 function Detail({location}){
@@ -9,7 +10,6 @@ function Detail({location}){
     </div>;
 }
 */
-
 class Detail extends React.Component{
     componentDidMount(){
         const {location, history} = this.props;
@@ -20,7 +20,15 @@ class Detail extends React.Component{
     render(){
         const {location} = this.props;
         if(location.states){
-            return <span>{location.states.title}</span>;
+            return (
+                    <section className="detail_box">
+                        <img src={location.states.poster} alt={location.states.title} title={location.states.title}></img> <br/>
+                        <span><h3>{location.states.title}</h3></span>
+                        <span><h5>{location.states.year}</h5></span>    
+                        <span><h5>{location.states.genres}</h5></span>    
+                        <span><h5>{location.states.summary}</h5></span>    
+                    </section>
+                );
         } else{
             return null;
         }

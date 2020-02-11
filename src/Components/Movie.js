@@ -26,7 +26,7 @@ function Movie({id, year, title, summary, poster, genres}) {
             genres
         }
     }}>
-        <div className="movie"> 
+    <div className="movie"> 
     <img src={poster} alt={title} title={title}></img>
     <div className="movie__data">
         <h3 className="movie__title"> {title} </h3>
